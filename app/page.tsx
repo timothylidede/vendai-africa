@@ -1,19 +1,28 @@
 import InfiniteGallery from '@/components/InfiniteGallery';
+import SiteHeader from '@/components/SiteHeader';
 
 export default function Home() {
 	const sampleImages = [
-		{ src: '/1.webp', alt: 'Image 1' },
-		{ src: '/2.webp', alt: 'Image 2' },
-		{ src: '/3.webp', alt: 'Image 3' },
-		{ src: '/4.webp', alt: 'Image 4' },
-		{ src: '/5.webp', alt: 'Image 5' },
-		{ src: '/6.webp', alt: 'Image 6' },
-		{ src: '/7.webp', alt: 'Image 7' },
-		{ src: '/8.webp', alt: 'Image 8' },
+		{ src: '/pretoria.png', alt: 'Pretoria cityscape' },
+		{ src: '/cairo.png', alt: 'Cairo skyline' },
+		{ src: '/algiers.png', alt: 'Algiers waterfront' },
+		{ src: '/abuja.png', alt: 'Abuja skyline' },
+		{ src: '/rabat.png', alt: 'Rabat coastal view' },
+		{ src: '/nairobi.png', alt: 'Nairobi skyline' },
+		{ src: '/addis-ababa.png', alt: 'Addis Ababa skyline' },
+		{ src: '/luanda.png', alt: 'Luanda harbor' },
+		{ src: '/yamoussoukro.png', alt: 'Yamoussoukro basilica' },
+		{ src: '/accra1.png', alt: 'Accra waterfront' },
+		{ src: '/abuja1.png', alt: 'Abuja skyline' },
+		{ src: '/rabat1.png', alt: 'Rabat coastal view' },
+		{ src: '/nairobi1.png', alt: 'Nairobi skyline' },
+		{ src: '/nairobi2.png', alt: 'Nairobi skyline' },
+		{ src: '/accra.png', alt: 'Accra waterfront' },
 	];
 
 	return (
 		<main className="min-h-screen ">
+			<SiteHeader context="visual" />
 			<InfiniteGallery
 				images={sampleImages}
 				speed={1.2}
@@ -24,7 +33,7 @@ export default function Home() {
 			/>
 			<div className="h-screen inset-0 pointer-events-none fixed flex items-center justify-center text-center px-3 mix-blend-exclusion text-white">
 				<h1 className="font-serif text-4xl md:text-7xl tracking-tight">
-					<span className="italic">I create;</span> therefore I am
+					Pan-African Wholesale Merchandiser
 				</h1>
 			</div>
 
